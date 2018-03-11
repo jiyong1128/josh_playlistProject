@@ -1,11 +1,11 @@
 {
-  "name": "Project Name",
+  "name": "josh_playlistProject",
   "version": "0.0.1",
   "description": "A review time project",
   "main": "index.js",
   "scripts": {
     "start:dev": "webpack -w & nodemon main.js",
-    "start": "node main"
+    "start": "nodemon main.js"
   },
   "keywords": [
     "react",
@@ -24,7 +24,7 @@
     "redux": "^3.6.0",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.1.0",
-    "sequelize": "^4.7.4"
+    "sequelize": "^4.36.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
