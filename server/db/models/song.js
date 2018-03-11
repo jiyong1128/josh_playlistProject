@@ -2,9 +2,16 @@ const Sequelize = require('sequelize');
 const db = require('../index')
 
 const Songs = db.define('songs', {
-    genre: {
+    title: {
         type: Sequelize.STRING,
         allowNull: false
+    },
+    artist: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    genre: {
+        type: Sequelize.STRING
     },
     lyrics: {
         type: Sequelize.STRING,
