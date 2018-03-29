@@ -14,11 +14,21 @@ const Songs = db.define('songs', {
         type: Sequelize.STRING
     },
     lyrics: {
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT,
         allowNull: false
     },
-    comments: {
-        type: Sequelize.STRING
+    img: {
+        type: Sequelize.STRING  // img??
+    },
+    duration: {
+        type: Sequelize.INTEGER
+    },
+    rating: {
+        type: Sequelize.DECIMAL,
+        validate: {
+            min: 0,
+            max: 5
+        }
     }
 })
 
